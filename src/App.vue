@@ -1,21 +1,11 @@
 <template>
   <div id="app" >
-
-    <div class="main">
-
-      <div class="scrollWrap">
-        <searchbar></searchbar>
-
-        <router-view/>
-
-      </div>
-    </div>
+    <router-view/>
   </div>
 
 </template>
 
 <style lang="scss">
-
   body {
       -webkit-text-size-adjust: none;
       -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -70,12 +60,9 @@
 </style>
 
 <script>
-
-import searchbar from '@/components/Search'
 export default {
 
   components: {
-    searchbar
   }
 }
 </script>
