@@ -1,5 +1,5 @@
 <template>
-    <div>test</div>
+    <div>test auto register components</div>
 </template>
 <script>
 export default {
