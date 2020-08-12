@@ -1,5 +1,7 @@
 # frontend
 
+> 这个是公共版权图书的前端部分，基于 `vue-cli` 进行构建
+
 ## Project setup
 ```
 npm install
@@ -19,6 +21,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
