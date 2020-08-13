@@ -1,3 +1,3 @@
 module.exports = {
-    title: 'Your Prpject title here'
+  title: 'Your Prpject title here'
 }

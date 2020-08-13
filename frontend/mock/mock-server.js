@@ -1,3 +1,3 @@
 module.exports = app => {
-    console.log('mock')
+  console.log('mock')
 }
