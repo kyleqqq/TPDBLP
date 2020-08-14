@@ -2,7 +2,7 @@
   * @param {string} url
   * @returns {Object}
   */
-const param2Obj = function(url) {
+function param2Obj(url) {
   // 获取链接请求参数并替换掉加号
   const search = decodeURIComponent(url.split('?')[1]).replace(/\+/g, '')
   if (!search) {
@@ -23,4 +23,6 @@ const param2Obj = function(url) {
   return obj
 }
 
-export { param2Obj }
+module.exports = {
+  param2Obj
+}

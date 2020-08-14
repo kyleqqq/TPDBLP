@@ -1,6 +1,7 @@
 import Vue from 'vue'
 
 import 'normalize.css/normalize.css'// CSS resets
+import 'animate.css'// animate css
 import '@/styles/index.scss'// global CSS
 
 import App from './App.vue'
