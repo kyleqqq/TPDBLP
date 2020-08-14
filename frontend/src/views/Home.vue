@@ -10,6 +10,15 @@
 <script>
 
 export default {
-  name: 'Home'
+  name: 'Home',
+  created() {
+    this.test()
+  },
+  methods: {
+    async test() {
+      const res = await this.$api.logout()
+      console.log(res)
+    }
+  }
 }
 </script>

@@ -6,10 +6,6 @@ const Mock = require('mockjs')
 
 const mockDir = path.join(process.cwd(), 'mock')
 
-module.exports = app => {
-  console.log('mock')
-}
-
 function registerRoutes(app) {
   let mockLastIndex
   const { mocks } = require('./index.js')

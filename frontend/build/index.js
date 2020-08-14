@@ -1,3 +1,7 @@
+/**
+ * tasksfile CLI执行build
+ * connect与serve-static实现静态资源的http访问
+ */
 const { sh } = require('tasksfile')
 const chalk = require('chalk')
 const config = require('../vue.config.js')
@@ -12,7 +16,7 @@ if (process.env.npm_config_preview || rawArgv.includes('--preview')) {
   const port = 9526
   const publicPath = config.publicPath
 
-  var connect = require('connect')
+  var connect = require('connect')// Connect is an extensible HTTP server framework for node using "plugins" known as middleware.
   var serveStatic = require('serve-static')
   const app = connect()
 
