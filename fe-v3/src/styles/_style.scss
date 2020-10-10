@@ -1,0 +1,24 @@
+@use './vars' as *;
+
+.wrapper {
+  max-width: 1200px;
+  min-width: 375px;
+  margin: 0 auto;
+}
+
+/* reset AntD style
+-------------------------------*/
+.ant-layout {
+  .ant-layout-header {
+    background: #fff;
+  }
+}
+
+
+/* nav
+------------------*/
+nav {
+  .logo {
+    height: 35px;
+  }
+}

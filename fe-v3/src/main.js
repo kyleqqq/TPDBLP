@@ -4,7 +4,7 @@ import Antd from 'ant-design-vue'
 import router from './router'
 
 import './styles/index.scss'
-import 'ant-design-vue/dist/antd.css'
+import 'ant-design-vue/dist/antd.less'
 
 createApp(App).use(Antd).use(router).mount('#app')
 
