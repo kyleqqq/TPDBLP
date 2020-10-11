@@ -1,6 +1,6 @@
 <template>
   <a-layout>
-    <a-layout-header><Header /></a-layout-header>
+    <a-layout-header class="row-space-between"><Header /></a-layout-header>
     <a-layout-content><router-view :key="$router.path" /></a-layout-content>
     <a-layout-footer>Footer</a-layout-footer>
   </a-layout>

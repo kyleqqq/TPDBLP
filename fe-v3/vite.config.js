@@ -15,5 +15,9 @@ module.exports = {
       },
       javascriptEnabled: true
     }
-  }
+  },
+  // 配置Dep优化行为
+  // optimizeDeps: {
+  //   include: ['@ant-design/colors', '@ant-design/icons-svg']
+  // },
 }

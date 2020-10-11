@@ -15,10 +15,16 @@
 }
 
 
-/* nav
+/* header
 ------------------*/
-nav {
-  .logo {
-    height: 35px;
+.logo {
+  height: 35px;
+}
+.search {
+  width: 28%;
+}
+.btn-space {
+  &.mlf {
+    margin-left: 10px;
   }
 }
