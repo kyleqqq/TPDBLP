@@ -4,7 +4,7 @@ module.exports = {
   alias: {
     '/@/': path.resolve(__dirname, './src')
   },
-  cssPreprocessOptions: {
+  /* cssPreprocessOptions: {
     // 重置 Antd 样式
     // @https://2x.antdv.com/docs/vue/customize-theme-cn/
     // 如果你是通过 'ant-design-vue/dist/antd.css' 引入样式的，改为 ant-design-vue/dist/antd.less -> main.js中
@@ -15,7 +15,7 @@ module.exports = {
       },
       javascriptEnabled: true
     }
-  },
+  }, */
   // 配置Dep优化行为
   // optimizeDeps: {
   //   include: ['@ant-design/colors', '@ant-design/icons-svg']

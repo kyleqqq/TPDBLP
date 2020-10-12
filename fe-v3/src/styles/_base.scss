@@ -6,13 +6,15 @@
   box-sizing: border-box;
 }
 
+/* Main Elements
+--------------------------------*/
 html, 
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei, Hiragino Sans GB, Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   color: $fontColor;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.5715;
   background-color: #fff;
 }
 
@@ -36,6 +38,21 @@ img {
 
 li {
   list-style: none;
+}
+
+input {
+  outline: none;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  padding: 0 10px;
+  height: 34px;
+  line-height: 34px;
+  background: transparent;
+  width: 100%;
+  &:focus,
+  &:active {
+    border-color: $primaryColor;
+  }
 }
 
 /* Utils

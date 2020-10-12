@@ -1,14 +1,14 @@
 <template>
-  <Main />
+  <q-main />
 </template>
 
 <script>
-import Main from './layouts/main.vue'
+import QMain from '/@/layouts/QMain.vue'
 
 export default {
   name: 'App',
   components: {
-    Main
+    QMain
   }
 }
 </script>
