@@ -7,15 +7,87 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+.svg-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  display: inline-block;
+  fill: $primaryColor;
+  margin-top: -0.3em;
+}
 
-/* reset AntD style
--------------------------------*/
-/* .ant-layout {
-  .ant-layout-header {
+.mr-5 {
+  margin-right: 5px;
+}
+
+/* Toast
+-----------------------------------*/
+.q-toast {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0, 0.65);
+  .q-toast-wrap {
+    width: 700px;
+    height: 560px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -350px;
+    margin-top: -280px;
     background: #fff;
+    .q-toast-close {
+      position: absolute;
+      right: 0;
+      top: 5px;
+      cursor: pointer;
+      .svg-icon {
+        width: 30px;
+        height: 30px;
+        &:hover {
+          fill: rgba($primaryColor, 0.85);
+        }
+      }
+    }
+    .q-toast-head {
+      background: #f0f0f0;
+      width: 100%;
+      height: 80px;
+      padding: 15px 0 0 25px;
+      
+      .title {
+        font-size: 20px;
+        color: $primaryColor;
+      }
+      .desc {
+        font-size: 12px;
+        color: #999;
+      }
+    }
+    .q-toast-slot {
+      width: 510px;
+      margin: 20px auto;
+    }
   }
-} */
+}
 
+/* Form
+------------------------------------*/
+.form {
+  .form-item {
+    margin-bottom: 10px;
+    label {
+      white-space: nowrap;
+      padding-right: 20px;
+      color: #818181;
+    }
+  }
+}
 
 /* header
 ------------------*/
@@ -30,12 +102,21 @@ header {
     height: 35px;
   }
   .search-wrap {
+    width: 380px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid $primaryColor;
     input {
-      width: 380px;
       color: $primaryColor;
-      border-color: $primaryColor;
+      border-color: transparent;
       &::-webkit-input-placeholder {
         color: $primaryColor;
+      }
+    }
+    .search-btn {
+      .svg-icon {
+        cursor: pointer;
+        margin-right: 0.6em;
       }
     }
   }
@@ -50,6 +131,12 @@ header {
     margin-left: 10px;
     &:hover {
       background-color: mix(#fff, $primaryColor, 20%);
+    }
+    .svg-icon {
+      width: 14px;
+      height: 14px;
+      fill: #fff;
+      margin-right: 0.5em;
     }
   }
 }

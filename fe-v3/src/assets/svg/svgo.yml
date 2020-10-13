@@ -21,3 +21,4 @@ plugins:
       - 'fill'
       - 'fill-rule'
       - 'opacity'
+      - 'style'
