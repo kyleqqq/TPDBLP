@@ -1,11 +1,19 @@
 @use './vars' as *;
 
+%page-title {
+  font-size: 20px;
+  color: $primaryColor;
+}
+
 .wrapper {
   max-width: 1680px;
   min-width: 375px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+  &.pc {
+    margin-top: 40px;
+  }
 }
 .svg-icon {
   width: 1em;
@@ -18,6 +26,15 @@
 
 .mr-5 {
   margin-right: 5px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+.mt-20-m {
+  margin-top: -20px;
+}
+.mt-15-m {
+  margin-top: -15px;
 }
 
 /* Toast
@@ -41,10 +58,11 @@
     margin-left: -350px;
     margin-top: -280px;
     background: #fff;
+    overflow: hidden;
     .q-toast-close {
       position: absolute;
       right: 0;
-      top: 5px;
+      top: 4px;
       cursor: pointer;
       .svg-icon {
         width: 30px;
@@ -85,6 +103,29 @@
       white-space: nowrap;
       padding-right: 20px;
       color: #818181;
+    }
+    textarea {
+      height: 150px;
+    }
+  }
+  .form-operation {
+    width: 150px;
+    margin: 0 auto;
+    padding-top: 15px;
+    .form-submit-btn {
+      display: block;
+      background-color: $primaryColor;
+      width: 100%;
+      height: 38px;
+      line-height: 38px;
+      text-align: center;
+      cursor: pointer;
+      color: #fff;
+      border-radius: 30px;
+      border: none;
+      &:hover {
+        background-color: rgba($primaryColor, 0.85);
+      }
     }
   }
 }
@@ -138,5 +179,87 @@ header {
       fill: #fff;
       margin-right: 0.5em;
     }
+  }
+}
+
+/* Left
+---------------------------*/
+.left-con {
+  width: 70%;
+}
+
+/* Right
+---------------------------*/
+.right-con {
+  width: calc(30% - 50px);
+}
+
+/* Daily Card
+----------------------------*/
+.daily-card {
+  .data {
+    position: relative;
+    width: 50px;
+    height: 70px;
+    font-size: 16px;
+    line-height: 20px;
+    background: $primaryColor;
+    border-radius: 5px 5px 0 0;
+    span {
+      display: inline-block;
+      padding: 0 5px;
+      margin-top: 5px;
+      border-radius: 5px;
+      text-align: center;
+      color: #fff;
+      font-family: Georgia;
+    }
+
+    &::after {
+      content: "";
+      width: 10px;
+      height: 2px;
+      background: #fff;
+      position: absolute;
+      left: 0;
+      bottom: 20px;
+    }
+  }
+  .title {
+    flex: 1;
+    margin-left: 10px;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 5px;
+    @extend %page-title;
+  }
+  .content {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: justify;
+    text-indent: 64px;
+    width: calc(100% - 30px - #{$cover-width});
+  }
+  .cover {
+    width: $cover-width;
+    display: block;
+    padding-bottom: $cover-height;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+/* Contain SVG & Title
+------------------------------------------*/
+.q-svg-title {
+  padding-left: 10px;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 5px;
+  .svg-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .title {
+    @extend %page-title;
+    margin-left: 10px;
   }
 }

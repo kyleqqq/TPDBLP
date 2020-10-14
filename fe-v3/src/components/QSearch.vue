@@ -29,7 +29,7 @@ export default {
     },
     // 投稿
     onContribute() {
-      console.log('aaa')
+      this.$emit('handleSubmit')
     }
   }
 }

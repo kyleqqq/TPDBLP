@@ -1,9 +1,9 @@
 <template>
   <q-header />
-  <section class="main">
+  <section class="wrapper pc flex-box-space">
     <router-view :key="$router.path" />
   </section>
-  <section class="footer">
+  <section class="footer wrapper">
     footer
   </section>
 </template>

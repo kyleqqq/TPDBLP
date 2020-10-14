@@ -2,10 +2,10 @@
   <header>
     <nav class="wrapper row-space-between">
       <q-logo />
-      <q-search />
+      <q-search @handleSubmit="handleSubmit" />
     </nav>
   </header>
-  <q-toast-contribute-form />
+  <q-toast-contribute-form ref="toast-contribute-from" />
 </template>
 <script>
 import QLogo from '/@/components/QLogo.vue'
@@ -18,6 +18,9 @@ export default {
     return {}
   },
   methods: {
+    handleSubmit() {
+      this.$refs['toast-contribute-from'].show()
+    }
   }
 }
 </script>
