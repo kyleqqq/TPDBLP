@@ -27,7 +27,7 @@
         2018年初冬，这位个性的意大利老头贝纳尔多·贝托鲁奇弃影迷而去，
         留下一卷“政治加性”的银幕传奇。
       </div>
-      <div class="cover mt-15-m" style="background-image: url('img/cover.jpg');"/>
+      <div class="cover mt-15-m" style="background-image: url('/img/cover.jpg');"/>
     </div>
   </div>
 </template>

@@ -25,7 +25,7 @@
 }
 
 .high-light {
-  color: $primaryColor;
+  color: $highColor;
 }
 
 .mr-5 {
@@ -152,7 +152,7 @@
 /* header
 ------------------*/
 header {
-  // background-color: #353331;
+  // background-color: $contrast-color;
   border-bottom: 1px dotted $primaryColor;
   position: fixed;
   left: 0;
@@ -223,22 +223,23 @@ header {
 -----------------------------*/
 .footer {
   width: 100%;
-  background-color: #353331;
-  padding: 30px 0 20px;
+  background-color: #c7bcb5;
+  padding: 15px 0;
+  color: #fff;
   .f-left {
     .logo {
       width: auto;
-      height: 38px;
+      height: 30px;
     }
   }
   .f-right {
     .f-link {
+      color: #fff;
       margin-left: 20px;
     }
   }
 }
 .copy-right {
-  color: $primaryColor;
   opacity: .85;
   font-size: 12px;
 }
@@ -341,6 +342,12 @@ header {
     color: $primaryColor;
     &:hover {
       color: rgba($primaryColor, 0.85);
+    }
+  }
+  .number {
+    color: $tipColor;
+    span {
+      color: $highColor;
     }
   }
 }

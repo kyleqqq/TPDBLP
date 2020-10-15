@@ -4,7 +4,8 @@
     :class="{ line: showLine}"
   >
     <div class="title">{{ title }}</div>
-    <div class="more" title="更多">>></div>
+    <div v-if="!showLine" class="more" title="更多" @click="$router.push({ path: '/list/wx'})">>></div>
+    <div v-if="showLine" class="number"><span>55</span>本</div>
   </div>
 </template>
 <script>

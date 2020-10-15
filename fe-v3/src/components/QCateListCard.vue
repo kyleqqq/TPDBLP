@@ -1,6 +1,6 @@
 <template>
   <div class="cate-card" :class="{ 'mb-70': subPage }">
-    <div class="cover" style="background-image: url('img/cover.jpg');" />
+    <div class="cover" style="background-image: url('/img/cover.jpg');" />
     <div class="info">
       <div class="name ellipsis">很长的标题很长的标题很长的标题很长的标题很长的标题很长的标题</div>
       <div class="sub ellipsis">1964 / 文学 / 巨作</div>
