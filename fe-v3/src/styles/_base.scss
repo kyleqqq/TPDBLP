@@ -13,7 +13,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei, Hiragino Sans GB, Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   color: $fontColor;
-  font-size: 14px;
+  font-size: $base-font-size;
   line-height: 1.5715;
   background-color: #fff;
 }
@@ -21,10 +21,13 @@ body {
 a {
   color: mix(#fff, $primaryColor, 20%);
   text-decoration: none;
-  &:focus,
   &:hover {
     color: $primaryColor;
     text-decoration: underline;
+  }
+  &:focus {
+    color: $primaryColor;
+    text-decoration: none;
   }
 }
 
@@ -65,6 +68,9 @@ select {
   background: $primaryColor;
 }
 
+sub {
+  vertical-align: super;
+}
 /* Utils
 ------------------------------ */
 .clearfix:before,
@@ -74,6 +80,11 @@ select {
 }
 .clearfix:after {
   clear: both;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 

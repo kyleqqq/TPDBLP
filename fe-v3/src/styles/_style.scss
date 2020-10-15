@@ -6,13 +6,13 @@
 }
 
 .wrapper {
-  max-width: 1680px;
+  max-width: 1400px;
   min-width: 375px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
   &.pc {
-    margin-top: 40px;
+    margin-top: 105px;
   }
 }
 .svg-icon {
@@ -24,11 +24,30 @@
   margin-top: -0.3em;
 }
 
+.high-light {
+  color: $primaryColor;
+}
+
 .mr-5 {
   margin-right: 5px;
 }
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
 .mb-50 {
   margin-bottom: 50px;
+}
+.mb-70 {
+  margin-bottom: 70px;
+}
+.mt-5 {
+  margin-top: 5px;
 }
 .mt-20-m {
   margin-top: -20px;
@@ -102,7 +121,7 @@
     label {
       white-space: nowrap;
       padding-right: 20px;
-      color: #818181;
+      color: $labelColor;
     }
     textarea {
       height: 150px;
@@ -135,15 +154,32 @@
 header {
   // background-color: #353331;
   border-bottom: 1px dotted $primaryColor;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 13;
+  width: 100%;
+  background-color: #fff;
   nav {
     height: 64px;
     line-height: 64px;
   }
   .logo {
+    cursor: pointer;
     height: 35px;
   }
+  .home-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+    margin-top: 0;
+    &:hover {
+      fill: rgba($primaryColor, 0.85);
+    }
+  }
   .search-wrap {
-    width: 380px;
+    width: 330px;
     height: 34px;
     line-height: 34px;
     border: 1px solid $primaryColor;
@@ -180,6 +216,31 @@ header {
       margin-right: 0.5em;
     }
   }
+}
+
+
+/* Footer
+-----------------------------*/
+.footer {
+  width: 100%;
+  background-color: #353331;
+  padding: 30px 0 20px;
+  .f-left {
+    .logo {
+      width: auto;
+      height: 38px;
+    }
+  }
+  .f-right {
+    .f-link {
+      margin-left: 20px;
+    }
+  }
+}
+.copy-right {
+  color: $primaryColor;
+  opacity: .85;
+  font-size: 12px;
 }
 
 /* Left
@@ -260,5 +321,77 @@ header {
   .title {
     @extend %page-title;
     margin-left: 10px;
+  }
+}
+
+/* Cate List
+----------------------------------*/
+.cate-tit {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  &.line {
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 10px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .more {
+    cursor: pointer;
+    color: $primaryColor;
+    &:hover {
+      color: rgba($primaryColor, 0.85);
+    }
+  }
+}
+.cate-card {
+  position: relative;
+  width: calc(100% / 6 - 10px);
+  &:hover {
+    .cover {
+      opacity: 1;
+    }
+    .info {
+      .name {
+        color: $primaryColor;
+      }
+    }
+  }
+  .cover {
+    width: 100%;
+    display: block;
+    padding-bottom: 100% * 1.5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .info {
+    margin-top: 10px;
+    padding: 10px 8px;
+    .name {
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    .sub {
+      text-align: center;
+      color: $labelColor;
+      font-size: 12px;
+      margin-bottom: 3px;
+    }
+  }
+}
+
+
+/* About
+---------------------*/
+.about {
+  .title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .cnt {
+    
   }
 }

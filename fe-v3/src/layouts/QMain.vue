@@ -3,14 +3,13 @@
   <section class="wrapper pc flex-box-space">
     <router-view :key="$router.path" />
   </section>
-  <section class="footer wrapper">
-    footer
-  </section>
+  <q-footer />
 </template>
 <script>
 import QHeader from './QHeader.vue'
+import QFooter from './QFooter.vue'
 export default {
   name: 'QMain',
-  components: { QHeader }
+  components: { QHeader, QFooter }
 }
 </script>
