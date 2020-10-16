@@ -3,7 +3,7 @@
   :title="title"
   :show-line="showLine"
   />
-  <div class="flex-box-space-wrap">
+  <div class="cate-list flex-box-space-wrap" :class="{ 'item-mb': showLine }">
     <q-cate-list-card />
     <q-cate-list-card />
     <q-cate-list-card />

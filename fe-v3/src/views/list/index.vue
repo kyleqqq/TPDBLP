@@ -5,14 +5,30 @@
     </div>
 
     <div class="btn-wrap">
-      <div class="load-more">加载更多</div>
+      <div class="load-more" :class="{'no-more': isAll }" @click="loadMore">{{ moreWord }}</div>
     </div>
   </div>
-  <div class="right-con"></div>
+  <div class="right-con">
+    <q-month-read-card />
+  </div>
 </template>
 <script>
-import QCateList from "/@/components/QCateList.vue";
+import QCateList from "/@/components/QCateList.vue"
+import QMonthReadCard from "/@/components/QMonthReadCard.vue"
 export default {
-  components: { QCateList },
+  components: { QCateList, QMonthReadCard },
+  data() {
+    return {
+      isAll: false,
+      moreWord: '加载更多'
+    }
+  },
+  methods: {
+    loadMore() {
+      this.moreWord = '加载中'
+      this.isAll = true
+      this.moreWord = '没有更多了~'
+    }
+  }
 };
 </script>

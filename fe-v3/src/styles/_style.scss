@@ -56,6 +56,13 @@
   margin-top: -15px;
 }
 
+.main-tit {
+  font-size: 18px;
+}
+.text {
+  margin: 5px 0 10px;
+  color: $labelColor;
+}
 /* Toast
 -----------------------------------*/
 .q-toast {
@@ -226,6 +233,7 @@ header {
   background-color: #c7bcb5;
   padding: 15px 0;
   color: #fff;
+  margin-top: 50px;
   .f-left {
     .logo {
       width: auto;
@@ -333,6 +341,7 @@ header {
   &.line {
     border-bottom: 1px solid $border-color;
     padding-bottom: 10px;
+    margin-bottom: 20px;
   }
   .title {
     font-size: 18px;
@@ -351,41 +360,48 @@ header {
     }
   }
 }
-.cate-card {
-  position: relative;
-  width: calc(100% / 6 - 10px);
-  &:hover {
+.cate-list {
+  .cate-card {
+    position: relative;
+    width: calc(100% / 6 - 10px);
+    &:hover {
+      .cover {
+        opacity: 1;
+      }
+      .info {
+        .name {
+          color: $primaryColor;
+        }
+      }
+    }
     .cover {
-      opacity: 1;
+      width: 100%;
+      display: block;
+      padding-bottom: 100% * 1.5;
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0.8;
+      cursor: pointer;
     }
     .info {
+      margin-top: 10px;
+      padding: 10px 8px;
       .name {
-        color: $primaryColor;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+      .sub {
+        text-align: center;
+        color: $labelColor;
+        font-size: 12px;
+        margin-bottom: 3px;
       }
     }
   }
-  .cover {
-    width: 100%;
-    display: block;
-    padding-bottom: 100% * 1.5;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.8;
-    cursor: pointer;
-  }
-  .info {
-    margin-top: 10px;
-    padding: 10px 8px;
-    .name {
-      font-size: 16px;
-      cursor: pointer;
-      margin-bottom: 10px;
-    }
-    .sub {
-      text-align: center;
-      color: $labelColor;
-      font-size: 12px;
-      margin-bottom: 3px;
+  &.item-mb {
+    .cate-card {
+      margin-bottom: 70px;
     }
   }
 }
@@ -400,5 +416,35 @@ header {
   }
   .cnt {
     
+  }
+}
+
+/* Loaders
+-----------------------------*/
+.btn-wrap {
+  position: relative;
+  width: 30%;
+  margin: 40px auto;
+  text-align: center;
+  font-size: 18px;
+  .load-more {
+    border: 1px solid $primaryColor;
+    color: $primaryColor;
+    border-radius: 5px;
+    cursor: pointer;
+    line-height: 50px;
+    &.no-more {
+      border-color: $border-color;
+      color: $border-color;
+      &:hover {
+        background-color: transparent;
+        color: $border-color;
+        cursor: not-allowed;
+      }
+    }
+    &:hover {
+      background-color: $primaryColor;
+      color: #fff;
+    }
   }
 }

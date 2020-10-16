@@ -13,14 +13,15 @@
 
   </div>
   <div class="right-con">
-    
+    <q-month-read-card />
   </div>
 </template>
 <script>
 import QDailySentence from '/@/components/QDailySentence.vue'
 import QSvgTitle from '/@/components/QSvgTitle.vue'
 import QCateList from '/@/components/QCateList.vue'
+import QMonthReadCard from "/@/components/QMonthReadCard.vue"
 export default {
-  components: { QDailySentence, QSvgTitle, QCateList }
+  components: { QDailySentence, QSvgTitle, QCateList, QMonthReadCard }
 }
 </script>
